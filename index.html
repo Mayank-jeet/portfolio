@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mayank Jeet | ML &amp; Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Mayank Jeet, B.Tech student at IIT Bhubaneswar building applied ML and agentic AI systems.">
+  <title>Mayank Jeet | AI &amp; ML Engineer</title>
+  <meta name="description" content="Portfolio of Mayank Jeet, B.Tech student at IIT Bhubaneswar and aspiring AI Engineer, ML Engineer and SDE-ML, building applied ML and agentic AI systems.">
+  <meta name="theme-color" content="#0a0c10">
+  <meta name="author" content="Mayank Jeet">
+  <!-- Social preview. TODO after deploying: add og:url and an og:image (absolute URL to a 1200x630 image) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mayank Jeet | AI &amp; ML Engineer">
+  <meta property="og:description" content="Applied ML and agentic AI projects: BlogGEN, OpsPilot and Anomaly-Inspect.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f17'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='36' font-weight='800' text-anchor='middle' fill='%237cc4ff'%3EM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <noscript><style>.rnav { display: none; }</style></noscript>
 
   <!-- TOP BAR: logo + theme toggle -->
   <header class="topbar">
@@ -56,27 +66,33 @@
     </button>
   </nav>
 
-  <main>
+  <main id="main">
     <!-- HERO (Step 2) -->
     <section id="home" class="section hero">
       <div class="container">
         <p class="eyebrow">B.Tech Civil Engineering &middot; IIT Bhubaneswar</p>
         <h1 class="chrome">Mayank Jeet</h1>
+        <div class="roles">
+          <span class="roles-label">Open to</span>
+          <span class="role-chip">AI Engineer</span>
+          <span class="role-chip">ML Engineer</span>
+          <span class="role-chip">SDE (ML)</span>
+        </div>
         <p class="pitch">I build applied ML and agentic AI systems, end to end.</p>
-        <p class="muted hero-sub">From model to deployed app with LangGraph, FastAPI, React and PyTorch. Looking for SDE and ML roles.</p>
+        <p class="muted hero-sub">From model to deployed app with LangGraph, FastAPI, React and PyTorch.</p>
 
         <div class="btn-row">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
           <!-- TODO: replace YOUR-USERNAME with your real GitHub / LinkedIn handles -->
-          <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/Mayank-jeet" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/mayank-jeet-211583364" target="_blank" rel="noopener">LinkedIn</a>
         </div>
 
         <div class="stats">
           <div class="plate stat"><strong>600+</strong><span>DSA problems solved (C++)</span></div>
           <div class="plate stat"><strong>3</strong><span>deployed AI projects</span></div>
-          <div class="plate stat"><strong>0.977</strong><span>mean image AUROC (PatchCore-style)</span></div>
+          <div class="plate stat"><strong>Full-stack</strong><span>ML model to API to UI to live deployment</span></div>
         </div>
       </div>
     </section>
@@ -117,8 +133,8 @@
               </ul>
               <div class="tags"><span>LangGraph</span><span>FastAPI</span><span>React</span><span>Tavily</span><span>Gemini</span></div>
               <div class="btn-row">
-                <a class="btn primary" href="https://YOUR-BLOGGEN-DEMO.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                <a class="btn" href="https://github.com/YOUR-USERNAME/BlogGEN" target="_blank" rel="noopener">Code</a>
+                <a class="btn primary" href="https://blog-rag-app.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/Mayank-jeet/blog-rag-app" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
@@ -135,8 +151,8 @@
               </ul>
               <div class="tags"><span>LangGraph</span><span>FastAPI</span><span>Playwright</span><span>React</span></div>
               <div class="btn-row">
-                <a class="btn primary" href="https://YOUR-OPSPILOT-DEMO.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-                <a class="btn" href="https://github.com/YOUR-USERNAME/OpsPilot" target="_blank" rel="noopener">Code</a>
+                <a class="btn primary" href="https://opspilot-mocha-xi.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/Mayank-jeet/opspilot" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
@@ -153,8 +169,8 @@
               </ul>
               <div class="tags"><span>PyTorch</span><span>FAISS</span><span>ONNX Runtime</span><span>FastAPI</span><span>React</span></div>
               <div class="btn-row">
-                <a class="btn primary" href="https://YOUR-ANOMALY-DEMO.example" target="_blank" rel="noopener">Live Demo</a>
-                <a class="btn" href="https://github.com/YOUR-USERNAME/Anomaly-Inspect" target="_blank" rel="noopener">Code</a>
+                <a class="btn primary" href="https://anomaly-inspect.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/Mayank-jeet/anomaly-inspect" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
@@ -190,11 +206,11 @@
             <div><strong>2</strong><span>platforms: LeetCode and CodeForces</span></div>
           </div>
           <div class="btn-row">
-            <a class="btn primary" href="https://leetcode.com/u/YOUR-USERNAME" target="_blank" rel="noopener">LeetCode</a>
-            <a class="btn primary" href="https://codeforces.com/profile/YOUR-USERNAME" target="_blank" rel="noopener">CodeForces</a>
-            <a class="btn" href="https://github.com/YOUR-USERNAME/LeetCode-Cpp" target="_blank" rel="noopener">LeetCode (C++) repo</a>
-            <a class="btn" href="https://github.com/YOUR-USERNAME/LeetCode-Python" target="_blank" rel="noopener">LeetCode (Python) repo</a>
-            <a class="btn" href="https://github.com/YOUR-USERNAME/SQL-Practice" target="_blank" rel="noopener">SQL practice</a>
+            <a class="btn primary" href="https://leetcode.com/u/m_j_bhardwaj" target="_blank" rel="noopener">LeetCode</a>
+            <a class="btn primary" href="https://codeforces.com/profile/Mayank_Jeet" target="_blank" rel="noopener">CodeForces</a>
+            <a class="btn" href="https://github.com/Mayank-jeet/leetcode-solutions" target="_blank" rel="noopener">LeetCode (C++) repo</a>
+            <a class="btn" href="https://github.com/Mayank-jeet/leetcode-solutions-python" target="_blank" rel="noopener">LeetCode (Python) repo</a>
+            <a class="btn" href="https://github.com/Mayank-jeet/SQL-solutions" target="_blank" rel="noopener">SQL practice</a>
           </div>
         </div>
       </div>
@@ -230,11 +246,11 @@
       <div class="container">
         <h2 class="section-title chrome">Contact</h2>
         <div class="plate contact">
-          <p>Open to SDE and ML opportunities. The fastest way to reach me is email.</p>
+          <p>Open to AI Engineer, ML Engineer and SDE (ML) roles. The fastest way to reach me is email.</p>
           <div class="btn-row">
             <a class="btn primary" href="mailto:mayankjeet7656@gmail.com">mayankjeet7656@gmail.com</a>
-            <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/Mayank-jeet" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/mayank-jeet-211583364" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
