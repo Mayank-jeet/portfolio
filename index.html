@@ -7,80 +7,141 @@
   <meta name="description" content="Portfolio of Mayank Jeet, B.Tech student at IIT Bhubaneswar building applied ML and agentic AI systems.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#home" class="logo">mayank<span>.</span></a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#problem-solving">Problem Solving</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <!-- TOP BAR: logo + theme toggle -->
+  <header class="topbar">
+    <a href="#home" class="logo">mayank<span>.</span></a>
+    <button id="theme-toggle" class="metal-btn" type="button" aria-label="Switch theme">
+      <svg class="ico ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>
+      <svg class="ico ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
   </header>
+
+  <!-- RADIAL NAV -->
+  <nav class="rnav" id="rnav" aria-label="Section navigation">
+    <div class="rnav-backdrop"></div>
+
+    <a class="rnav-item" href="#home" data-label="Home" aria-label="Home">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+    </a>
+    <a class="rnav-item" href="#about" data-label="About" aria-label="About">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+    </a>
+    <a class="rnav-item" href="#projects" data-label="Projects" aria-label="Projects">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7 15h10"/></svg>
+    </a>
+    <a class="rnav-item" href="#skills" data-label="Skills" aria-label="Skills">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/><path d="M14 4l-4 16"/></svg>
+    </a>
+    <a class="rnav-item" href="#problem-solving" data-label="Problem Solving" aria-label="Problem Solving">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>
+    </a>
+    <a class="rnav-item" href="#background" data-label="Background" aria-label="Background">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z"/></svg>
+    </a>
+    <a class="rnav-item" href="#contact" data-label="Contact" aria-label="Contact">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+    </a>
+
+    <div class="rnav-hub" aria-hidden="true"></div>
+    <div class="rnav-label" aria-live="polite"></div>
+    <div class="rnav-pill" aria-hidden="true"></div>
+
+    <button class="rnav-toggle" id="rnav-toggle" type="button" aria-expanded="false" aria-controls="rnav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
   <main>
     <!-- HERO (Step 2) -->
     <section id="home" class="section hero">
       <div class="container">
-        <p class="eyebrow">Hero</p>
-        <h1>Mayank Jeet</h1>
-        <p class="muted">Placeholder: pitch and buttons come in Step 2.</p>
+        <p class="eyebrow">B.Tech Civil Engineering &middot; IIT Bhubaneswar</p>
+        <h1 class="chrome">Mayank Jeet</h1>
+        <p class="pitch">I build applied ML and agentic AI systems, end to end.</p>
+        <p class="muted hero-sub">From model to deployed app with LangGraph, FastAPI, React and PyTorch. Looking for SDE and ML roles.</p>
+
+        <div class="btn-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <!-- TODO: replace YOUR-USERNAME with your real GitHub / LinkedIn handles -->
+          <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <div class="stats">
+          <div class="plate stat"><strong>600+</strong><span>DSA problems solved (C++)</span></div>
+          <div class="plate stat"><strong>3</strong><span>deployed AI projects</span></div>
+          <div class="plate stat"><strong>0.977</strong><span>mean image AUROC (PatchCore-style)</span></div>
+        </div>
       </div>
     </section>
 
     <!-- ABOUT (Step 2) -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="muted">Placeholder: summary and photo come in Step 2.</p>
+        <h2 class="section-title chrome">About</h2>
+        <div class="plate about">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Mayank Jeet" loading="lazy" onerror="this.parentElement.classList.add('no-photo')">
+          </div>
+          <div class="about-text">
+            <p>I'm a B.Tech Civil Engineering student at IIT Bhubaneswar (batch of 2028, CGPA 8.46) who spends most of his time building software: full-stack apps, applied machine learning and agentic AI systems.</p>
+            <p>I've solved 600+ DSA problems in C++ and built three deployed projects: <strong>OpsPilot</strong>, an autonomous task-executing agent with a human approval gate; <strong>BlogGEN</strong>, a RAG-based blog generator; and <strong>Anomaly-Inspect</strong>, a computer-vision defect detector.</p>
+            <p>I enjoy taking an idea all the way to a working demo. Outside code, I'm Core Head of Sports Fest at IIT Bhubaneswar, where I lead a team of organizers.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS (Step 3) -->
     <section id="projects" class="section alt">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="muted">Placeholder: BlogGEN, OpsPilot, Anomaly-Inspect cards come in Step 3.</p>
+        <h2 class="section-title chrome">Projects</h2>
+        <div class="plate"><p class="muted">Placeholder: BlogGEN, OpsPilot, Anomaly-Inspect cards come in Step 3.</p></div>
       </div>
     </section>
 
     <!-- SKILLS (Step 4) -->
     <section id="skills" class="section">
       <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <p class="muted">Placeholder: grouped skill tags come in Step 4.</p>
+        <h2 class="section-title chrome">Skills</h2>
+        <div class="plate"><p class="muted">Placeholder: grouped skill tags come in Step 4.</p></div>
       </div>
     </section>
 
     <!-- PROBLEM SOLVING (Step 4) -->
     <section id="problem-solving" class="section alt">
       <div class="container">
-        <h2 class="section-title">Problem Solving</h2>
-        <p class="muted">Placeholder: DSA stats and links come in Step 4.</p>
+        <h2 class="section-title chrome">Problem Solving</h2>
+        <div class="plate"><p class="muted">Placeholder: DSA stats and links come in Step 4.</p></div>
       </div>
     </section>
 
     <!-- LEADERSHIP + EDUCATION (Step 4) -->
     <section id="background" class="section">
       <div class="container">
-        <h2 class="section-title">Leadership &amp; Education</h2>
-        <p class="muted">Placeholder: Sports Fest and education come in Step 4.</p>
+        <h2 class="section-title chrome">Leadership &amp; Education</h2>
+        <div class="plate"><p class="muted">Placeholder: Sports Fest and education come in Step 4.</p></div>
       </div>
     </section>
 
-    <!-- CONTACT (Step 2 / 6) -->
+    <!-- CONTACT -->
     <section id="contact" class="section alt">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="muted">Placeholder: email and social links.</p>
+        <h2 class="section-title chrome">Contact</h2>
+        <div class="plate contact">
+          <p>Open to SDE and ML opportunities. The fastest way to reach me is email.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="mailto:mayankjeet7656@gmail.com">mayankjeet7656@gmail.com</a>
+            <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
