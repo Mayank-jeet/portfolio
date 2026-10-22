@@ -1,30 +1,25 @@
-%PDF-1.4
+%PDF-1.3
 %‚„œ”
 1 0 obj
 <<
-/Producer (pypdf)
+/Type /Catalog
+/Pages 2 0 R
+/Outlines 20 0 R
 >>
 endobj
 2 0 obj
 <<
 /Type /Pages
 /Count 1
-/Kids [ 4 0 R ]
+/Kids [ 3 0 R ]
 >>
 endobj
 3 0 obj
 <<
-/Type /Catalog
-/Pages 2 0 R
-/Outlines 9 0 R
->>
-endobj
-4 0 obj
-<<
-/Contents 5 0 R
+/Contents 22 0 R
 /MediaBox [ 0 0 595.2756 841.8898 ]
 /Resources <<
-/Font 6 0 R
+/Font 5 0 R
 /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >>
 /Rotate 0
@@ -32,10 +27,10 @@ endobj
 >>
 /Type /Page
 /Parent 2 0 R
-/Annots [ 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R ]
+/Annots [ 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 23 0 R ]
 >>
 endobj
-5 0 obj
+4 0 obj
 <<
 /Filter [ /ASCII85Decode /FlateDecode ]
 /Length 4477
@@ -44,13 +39,13 @@ stream
 Gau`VflGh,(4FM1i+8dUM8X@?1,#C^NoRL;34:m(?0)lYJg@cRK#>Qf\u+WEk?Ms<j_0R:9Ibrp!lW(6c92u>_0#T0eGnKtZ.DA:nu]_:P78n`YVhmZ0A5%JftX-soh<EQ/B>1Mk';O?l+Vr90WZ.hiOAp;9[g<gK5%c*=J!L;kqfDTZsp8t*$S'g)C31A8:]Y:RVlPU3+aO>K0KP^IUV]kcA'Zun4tt?#O?R]?oO_IBAJU'5Vp13Ol`!kNLud_kU*o%J!Mc]pGLQF/S8[NM`o:PAa>e&lg:71h9nF?eU57i3qGI4F)BClc<F/me4`cf0ENg[m<[*5Xslf][_?@9k*h,9\DC:OZRIuH4*_DTGL)[mlDEUQ:>iGXYW6([jShpu$I<kMInf)gMR?:+0r40C6!mga1.puRp`c^"D%XG$>3AcQXrK#VZ_HUuhq7o/d:/9lWd&5F;Ao&d3g15>kE/Ft>Yr`/4BjY3g9qAj$^SEofd#Xlhma[A/%!6bf`Cg+@ZITr^0uFKn25^1#W,i*Ol7u-8S1qqjk:XPH0q^p"qga@CB^8s[K/+kD61rd0q8D1a`;et[:/j%bD)(6aXWp`..kTP])"dCIB<rI3+Jl66PQl5A/Za\A5P*nGu9Sj;D;F]Mi/a*4Y'#b&c!ZtfOIn)R.uhRU.@VenrtL.4YnPI\=XR"]P"dF'UUD<=K^=e4AFj,N"ORu%!NZ:l*S^!=R[l@VG/3o$JF?hjbpb_o,RLf0cT_9itiaingN,BXc+@+R&fO+fULUr9/ASc0ptH:4+6XNh4<oV&>[jU**4(^)J+tWTVpYh//7oDB9Bs9ePR4'"o[$9GVU%K//Qql[Q,tX!\rK&Apc.#9kB]Re'4E=+Wg/%j(0AI3L==&$D-/L`>9,P"W:J]#W?*MKCf(uk?'U+8O<>JUK#19D.PHYM?d[fAKeAY6U^1V`aU./U-BEI:j]/n%AR5"A9sj;FOjr?H!Uo^07)tSn.5Z)(IRCK]6g^J:--u/jF,(us$\IUdf3*Z2r@-:X#WC"j]urbU163P(H>B'lmgmur8It3opS5,<eU['<_7)45Vo#XD(MUJB-1G/pV0bsVd&Lm,U-/Q`!0r06uf.$D"I%U!s082'<TUpf)NbDYf.t*b&;(%Nn,P&fr4h/U8ofZS"tK\Y7/`U,-ZN;\%@B'X=R6O?%[Q]+]YKAN.u5#0dstch'=FbPEU2V$sC]0)%a##1ZTipKhMM?;,TqiA0M7fKekIO!A-+'FI?Qk&NoRj_l]omP[pO_n9ZGP9N3OEi*Ti02L2#":s&n71/S$`+%-T0/I?>4E*!LSLPRa:aB6YXKh!k4[tH<8gj/Y,_L]`Y.RYS.&lJ$iAR=_e`3?6@F'Wt[7c_rR;8+L?]h&!pE]b'?S'*',A6*u3a0>br6H@X]n1!X%CTZ!97IsJj"\6i&Z$RWlK$qic.otd4<)t>UbU"7RADCt"cI+:Y$m[/rSo^o,d@?e#@igLfOS>$GmMp?mL?L<0@kWm!JJ&7,/U<:FnN0A%QrJW4VH('*DB[q$(\9&3p&\;C!&OVrI]9Z/S\kBhf0eWC+r1o^:l:'F!m=PRJ[6?i(kFakY]JTOHUa`S'I$s7E/93M,?Io3k%+_?oSCj0M#S&"Og8^fT'R7LUsO@GDt$jPW:5!E&%NS7Vc%A$CB1PA&X%[-2hHG6A!9Sd:Nc-45aKCdp])UP%C]VA!mio?NoSkg#lsmu!1?>VJ<+Dn*Q8XW2cu4Gn;&5VqJS.$(H"p6<rsA?)J&C>Btn:P\;p@dO>3:@Fa<bEA\kX2NZD21flS,nE'u7$(YKDD/!V5S`/L)7C(W_N7nFe-3KEZ5Ke7F9GQ?!Z&AK6N3Uf3;!5K>5=?`l%KXK1DP<S?gQ_Rer%t_buVDW`4X:S!t@%_`e/%X8c=6,>PO;6/J:ajYXO$&U\ZKH3C+X`--AV;WqiRYBsff03kT+HKh#pS#/b%*sY89W(s=QK?iJ`1`tX.P#4K*mfBM9)H;)-=S.Te)Cb0<7F2a`9F@Kc?F6"-1=\U/<6Z@<:Aq1@">"s&5?!npU_'8-p`.,$m*$<iE^OPHdAmb,>Z4D+"uTcIo_/3'KK_BR,[O`ajplV,,VYqqT*E[Vu0;AEafh)8Srfkl>5c<QsTQ,)QPn6I/_L#%R@X4!d0K'NXj[QT;nsKpsSl&hc%,UqYGKjHs>&,QV64Ju\'t=gsa_R%'s$aNA(lre>)WA^Lck&ZdW-'38X+afCBJfO.C,R-<(pDP8C>MNLlJ(ZME1TtH.o.\_AoAf5o#'Hs(0'N#"9D<f'e")S`@/--tl216QJ]"VeF<Bj.f#\b/ggHt,$Ad,Vm6ie0uAtY4Q?R0n(j0'sAFgHk/0Y"X+mBM]o55`]D.&5qaC&@BEl[s'SHk+l[#EZm:";([2'B>'81k*(54;8qX]]h.c]X^($iC#:?A6]o8r2NOl&j[fME[_&iO2.Zl/mq(p9s@uG&>rHpM4/5)75:!9+;[<C00s\,rud35iNnC!<$-/SU@KA&c6XZ\`0:(gN[Vb<!rEC]&Kjdo>)^-]f)/:MF1hf>?(.pcq]&s?n=]kmD>_p?:38)W4D51j<BP^!lcmK!:5i9'fZWrK>1KB^oEAp6iDIRt#]nS/V+6dp#;+C^3_ajUT8r=Nn82q;<5huR'DjaYhq2,%[,5Ao_K(W1)05G)H7QL7M8H33$8Y^r<J8^G(=fYZ(NmcK/ll""rGUW=Eu8m:_#l*trBg47Ro<<7#Y'!.?N7$RSKF?GA,/=brpP%HFk.U_mWOTO]A7P4msYm<Y9oPq\^#bC7Ha_n;]JO\DV7+5+X$J1\M.Z77?2-\jOAAa7@dg":B-qqn<29$%i--%49:k@ng+&>=fCP=3rDgSnXKjn6*atgTE^c>Mc(:hc,"pT+RUW+qF$=12p2MD5`EH0ph[-4kC84lhE`gQP/@.rUeJY*!)Y+B*Sck8Z(.inTJBQlZRPApjRaFaVnfR[+S?m7(t:Lt^g)-eF*%K398`p`)L6<E`UOuS_A8N@nbpq`G3\`ph<hMY^^P&Gq<:[g8BVp+M_q5rBY";>rTY;X3;LUPS"Bo)at$U26^65-oA43j=L1%U-RbqMUeNX/7oq\+BKQAT;]FM!OR]`O"fc"ZUGjt'YK(NF?%T=d/b"s!-f5B:/odKhk'R*CDo4+uMiBf=R=D0P=4KA[G$2Rl6:Dr#lrJO1H0b+*l17^s\]ipMo!-5a!Li(V;/'KQ>?#bJjRZeP2fAg?`*UUS/a7%nl#bs-#4C2TSJ.ih_0Jfs?D,g2E;N/td/u37K7qtK1^\T23VD0:!67LA*bKp]oZHY]gg7$crV%)7`neF,Ep\X&I_FsM.pdbq'QGrr`!\bl)%:Rj^_MO-^o]p$)KUhj(4j>2CB#VMljWqVQ78A!n()l)=^Pt$G(R1lL<:H*7JfjEk3R8i>RuH89)(m'^o^fBX9B'cXP6&d\"iZ&?4Q5PMuB1V0FO,Mq.B4NYq7pPg<N:?Wf71.Q0G"CC]>Lb0p;+Aa$/B9H;0>I;GL(Z:M%a?^%Tg`3b[rd2_r#^S,!fYi4pJF7;!_43;T["0REr=JTc8FXj@A"WcNGh^O0Xce]VTa;d-18+N@8cDbedUq"Nr-8?;`a3.hGuG"V"h3P&Krl0:b2&Of^8gED",[_=N)1MPlY!JO-Y<*_G8^==7@<AQo/Hb2Z1\f%lkRCe+:\f%lV<RoTA1PhU(Cdq]3K.X>N?.t45/tY%a,U;OH'&/GB!a@I/K3i$!e]0,+M*>!Zn'jF=/M/Y]D`Q.>DcA:.?_(i`[UroVB3sM0[bB2NhNN3Vl;K<^#mX7d#HfjDm0i0\<%;s8>8W4pe^pr$^>Fd?Jq:qk[;%.Fh3h+0)]#D4d=LTpJSGnRc$Ri'FA<%K\^UVkep[5A>O,40M7RIcnL=;sh).:c'_f#[j*X94+c8g1Pn#f;_HR7JpW81RgMQ8$htL5]>ZT_^m3C?\&Z5tQ46&?NbId1;eS&+3>Ja3DiQsNm1;Ja8GoBYE^89&%.T,4Qd14>s$Y+J]0nM"jE45mkCpT5=dZi:BORcTGD#BIpRRD7H(_rOTDmXU,:-uf=+mk`D6I6/>O_m9nZs6u0/c-ruY'>-)3MQQqRY/C;7`(.PDjB9:gH_>N`c14h,Q[qiLQYSQ9?Y`dgCY(m4aq06DARpabj*s0[H^W5d?3*B^%b31esc-i%YNqK<,I9W#[L0\oQNg_&H[=hc_$e9%sCJ$&Q5dT/2+K'Vmsc()lGDgQ2Q0:V2_[RmKaufYHMllYOD_Q*H9'_o(r&rG=3Gp!"if2Ni40*p^!k6m>e&R>QK&,nWm9<Zs0R5BkJ8'])J28B=<:(*N[4d+`ur5L`^\^r#E;Z+7'_)LG$=rEji@&oWiR1ic);,"5V7,h`Z1LEV1\RYhj)G&++E?(P1iTNfr+&Zr.@jX("c1_9GD1C^,%t,e@_Ll\fr=Em;bM])$*P^1`:=e6D#\`Mo>bHFR^ofsC\Z]Z:L;~>
 endstream
 endobj
-6 0 obj
+5 0 obj
 <<
-/F1 7 0 R
-/F2 8 0 R
+/F1 6 0 R
+/F2 7 0 R
 >>
 endobj
-7 0 obj
+6 0 obj
 <<
 /BaseFont /Helvetica
 /Encoding /WinAnsiEncoding
@@ -59,7 +54,7 @@ endobj
 /Type /Font
 >>
 endobj
-8 0 obj
+7 0 obj
 <<
 /BaseFont /Helvetica-Bold
 /Encoding /WinAnsiEncoding
@@ -68,11 +63,7 @@ endobj
 /Type /Font
 >>
 endobj
-9 0 obj
-<<
->>
-endobj
-10 0 obj
+8 0 obj
 <<
 /A <<
 /S /URI
@@ -80,13 +71,13 @@ endobj
 /URI (https\072\057\057www\056linkedin\056com\057in\057mayank\055jeet\055211583364)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 358.0206 767.7487 393.3946 781.7087 ]
+/Rect [ 339.41198 767.7487 374.78598 781.7087 ]
 /Subtype /Link
 /Type /Annot
 /F 4
 >>
 endobj
-11 0 obj
+9 0 obj
 <<
 /A <<
 /S /URI
@@ -94,13 +85,13 @@ endobj
 /URI (https\072\057\057github\056com\057Mayank\055jeet)
 >>
 /Border [ 0 0 0 ]
-/Rect [ 396.1674 767.7487 425.997 781.7087 ]
+/Rect [ 377.55878 767.7487 407.38838 781.7087 ]
 /Subtype /Link
 /Type /Annot
 /F 4
 >>
 endobj
-12 0 obj
+10 0 obj
 <<
 /A <<
 /S /URI
@@ -114,7 +105,7 @@ endobj
 /F 4
 >>
 endobj
-13 0 obj
+11 0 obj
 <<
 /A <<
 /S /URI
@@ -128,7 +119,7 @@ endobj
 /F 4
 >>
 endobj
-14 0 obj
+12 0 obj
 <<
 /A <<
 /S /URI
@@ -142,7 +133,7 @@ endobj
 /F 4
 >>
 endobj
-15 0 obj
+13 0 obj
 <<
 /A <<
 /S /URI
@@ -156,7 +147,7 @@ endobj
 /F 4
 >>
 endobj
-16 0 obj
+14 0 obj
 <<
 /A <<
 /S /URI
@@ -170,7 +161,7 @@ endobj
 /F 4
 >>
 endobj
-17 0 obj
+15 0 obj
 <<
 /A <<
 /S /URI
@@ -184,7 +175,7 @@ endobj
 /F 4
 >>
 endobj
-18 0 obj
+16 0 obj
 <<
 /A <<
 /S /URI
@@ -198,7 +189,7 @@ endobj
 /F 4
 >>
 endobj
-19 0 obj
+17 0 obj
 <<
 /A <<
 /S /URI
@@ -212,7 +203,7 @@ endobj
 /F 4
 >>
 endobj
-20 0 obj
+18 0 obj
 <<
 /A <<
 /S /URI
@@ -226,7 +217,7 @@ endobj
 /F 4
 >>
 endobj
-21 0 obj
+19 0 obj
 <<
 /A <<
 /S /URI
@@ -240,36 +231,631 @@ endobj
 /F 4
 >>
 endobj
+20 0 obj
+<<
+>>
+endobj
+21 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+22 0 obj
+<<
+/Length 13789
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 51.35433 779.7087 cm
+q
+.121569 .227451 .431373 rg
+BT 1 0 0 1 0 4 Tm /F2 21 Tf 25 TL 171.03 0 Td (MAYANK JEET) Tj T* -171.03 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 769.2087 cm
+q
+.121569 .372549 .74902 RG
+n 290.0576 1.1625 m 321.4316 1.1625 l S
+n 328.2045 1.1625 m 354.0341 1.1625 l S
+n 360.8069 1.1625 m 391.2513 1.1625 l S
+BT 1 0 0 1 0 2.2 Tm 101.3156 0 Td 10.5 TL /F1 8.3 Tf .266667 .266667 .266667 rg (\(+91\) 6202566596 | mayankjeet7656@gmail.com | ) Tj .121569 .372549 .74902 rg (LinkedIn) Tj .266667 .266667 .266667 rg ( | ) Tj .121569 .372549 .74902 rg (GitHub) Tj .266667 .266667 .266667 rg ( | ) Tj .121569 .372549 .74902 rg (Portfolio) Tj T* -101.3156 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 748.7087 cm
+q
+.121569 .227451 .431373 rg
+BT 1 0 0 1 0 2.5 Tm /F2 12 Tf 14.5 TL (Professional Summary) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 746.9087 cm
+q
+.8 w
+1 J
+.121569 .227451 .431373 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 698.8087 cm
+q
+.121569 .372549 .74902 RG
+n 326.6415 24.4125 m 364.3647 24.4125 l S
+n 371.4639 24.4125 m 418.8441 24.4125 l S
+BT 1 0 0 1 0 36.9 Tm -0.011876 Tw 11.4 TL /F1 8.7 Tf 0 0 0 rg (B.Tech Civil Engineering student at IIT Bhubaneswar with experience spanning full-stack software engineering, applied machine) Tj T* 0 Tw (learning, agentic AI systems, and data analysis. Solved 600+ DSA problems in C++ \() Tj .121569 .372549 .74902 rg (LeetCode) Tj 0 0 0 rg ( | ) Tj .121569 .372549 .74902 rg (CodeForces) Tj 0 0 0 rg (\) and built and) Tj T* (deployed production-grade AI applications \227 an autonomous task-executing agent, a RAG-based content pipeline, and a) Tj T* (computer-vision defect-detection system \(LangGraph, FastAPI, React, PyTorch\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 678.3087 cm
+q
+.121569 .227451 .431373 rg
+BT 1 0 0 1 0 2.5 Tm /F2 12 Tf 14.5 TL (Key Projects) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 676.5087 cm
+q
+.8 w
+1 J
+.121569 .227451 .431373 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 662.2087 cm
+q
+.121569 .372549 .74902 RG
+n 335.7953 1.45 m 366.4589 1.45 l S
+BT 1 0 0 1 0 2.6 Tm 11.8 TL /F2 9.2 Tf 0 0 0 rg (BlogGEN: RAG-Based Blog Generation App | ) Tj /F1 8.3 Tf (LangGraph, FastAPI, React, Tavily) Tj /F2 9.2 Tf ( - ) Tj .121569 .372549 .74902 rg (GitHub) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 638.6087 cm
+q
+BT 1 0 0 1 2 14.1 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 14.1 Tm /F1 8.7 Tf 11.4 TL .5 0 Td -0.101769 Tw (Built and deployed a full-stack app that turns a topic into a researched, structured blog: a LangGraph pipeline breaks the topic) Tj T* 0 Tw -0.5 0 Td (into tasks, retrieves sources per task via on-demand web research \(Tavily\), and writes the final post.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 614.8087 cm
+q
+BT 1 0 0 1 2 14.1 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 14.1 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Designed a token-budget monitor that allocates research depth per task by importance, keeping LLM usage under control,) Tj T* -0.5 0 Td (plus automatic image placement: the model decides where visuals are needed and generates them \(Gemini\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 591.0087 cm
+q
+BT 1 0 0 1 2 14.1 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 14.1 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Built a ChatGPT-style React interface with a sidebar to switch between past chats and start new ones, backed by per-thread) Tj T* -0.5 0 Td (state in a LangGraph checkpointer. FastAPI backend on Render, frontend on Vercel.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 576.7087 cm
+q
+.121569 .372549 .74902 RG
+n 427.5584 1.45 m 458.222 1.45 l S
+BT 1 0 0 1 0 2.6 Tm 11.8 TL /F2 9.2 Tf 0 0 0 rg (OpsPilot: Autonomous AI Task Worker with Human Approval | ) Tj /F1 8.3 Tf (LangGraph, FastAPI, Playwright, React) Tj /F2 9.2 Tf ( - ) Tj .121569 .372549 .74902 rg (GitHub) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 541.7087 cm
+q
+BT 1 0 0 1 2 25.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 25.5 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Built and deployed an AI agent that turns a plain-English task into a verified business workflow: a LangGraph) Tj T* -0.5 0 Td (plan-act-observe loop where the LLM picks one structured action at a time from 8 tools, while deterministic guards enforce) Tj T* (step order and rules.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 517.9087 cm
+q
+BT 1 0 0 1 2 14.1 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 14.1 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Automated a simulated accounting app through a real headless browser \(Playwright\); the agent independently verifies the) Tj T* -0.5 0 Td (ledger result and detects duplicates to avoid double-posting.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 482.7087 cm
+q
+BT 1 0 0 1 2 25.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 25.5 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Designed a human-in-the-loop safety gate: high-value invoices pause for approve/reject, enforced in both the executor and) Tj T* -0.5 0 Td (the API, so the model cannot approve its own transaction. Added retry-based failure recovery and multi-currency parsing with) Tj T* (live exchange rates.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 468.4087 cm
+q
+.121569 .372549 .74902 RG
+n 271.7312 1.45 m 302.3948 1.45 l S
+BT 1 0 0 1 0 2.6 Tm 11.8 TL /F2 9.2 Tf 0 0 0 rg (Anomaly-Inspect | ) Tj /F1 8.3 Tf (PyTorch, FAISS, ONNX Runtime, FastAPI, React) Tj /F2 9.2 Tf ( - ) Tj .121569 .372549 .74902 rg (GitHub) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 444.8087 cm
+q
+BT 1 0 0 1 2 14.1 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 14.1 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Built an unsupervised defect-detection system on MVTec AD, comparing a convolutional-autoencoder baseline against a) Tj T* -0.5 0 Td (PatchCore-style method \(frozen ResNet-18 features + FAISS memory banks\) across 15 categories.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 421.0087 cm
+q
+BT 1 0 0 1 2 14.1 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT 1 0 0 1 11 14.1 Tm .5 0 Td -0.002876 Tw 11.4 TL /F1 8.7 Tf 0 0 0 rg (Reached ) Tj /F2 8.7 Tf (0.977 mean image AUROC) Tj /F1 8.7 Tf ( / ) Tj /F2 8.7 Tf (0.973 mean pixel AUROC) Tj /F1 8.7 Tf ( with the PatchCore-style method, versus 0.669 / 0.505 for) Tj T* 0 Tw -0.5 0 Td (the autoencoder baseline.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 408.6087 cm
+q
+BT 1 0 0 1 2 2.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 2.7 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Exported the model to ONNX and deployed it as a FastAPI + React demo with ~97ms median end-to-end latency on CPU.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 388.1087 cm
+q
+.121569 .227451 .431373 rg
+BT 1 0 0 1 0 2.5 Tm /F2 12 Tf 14.5 TL (Experience) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 386.3087 cm
+q
+.8 w
+1 J
+.121569 .227451 .431373 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 51.35433 372.0087 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.6 Tm /F2 9.2 Tf 11.8 TL (Core Head - Sports Fest, IIT Bhubaneswar) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 359.8087 cm
+q
+BT 1 0 0 1 2 2.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 2.7 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Lead a team of organizers for the fest, assigning task ownership and keeping event operations on schedule.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 347.4087 cm
+q
+BT 1 0 0 1 2 2.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 11 2.7 Tm /F1 8.7 Tf 11.4 TL .5 0 Td (Handle cross-functional planning and logistics for large-scale campus event execution.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 326.9087 cm
+q
+.121569 .227451 .431373 rg
+BT 1 0 0 1 0 2.5 Tm /F2 12 Tf 14.5 TL (Technical Skills) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 325.1087 cm
+q
+.8 w
+1 J
+.121569 .227451 .431373 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 45.35433 206.4087 cm
+q
+.929412 .929412 .929412 rg
+n 0 116.2 119.0551 -116.2 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 102.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Programming) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 102.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Python, C++, C, SQL \(MySQL\), HTML, CSS, JavaScript) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Machine Learning / AI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (PyTorch, TensorFlow, Keras, ONNX Runtime, FAISS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Generative AI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 69.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (LangChain, LangGraph, RAG, LLM APIs \(OpenAI, Anthropic, Gemini\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 52.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Data Science) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 52.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 36.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Web Development) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 36.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (FastAPI, Streamlit, React, REST APIs, Model Deployment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 19.6 cm
+q
+BT 1 0 0 1 0 2.3 Tm 10.6 TL /F2 8.3 Tf 0 0 0 rg (Tools & Platforms) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Git, GitHub, Jupyter Notebook, VS Code, Google Colab, Render, Vercel, Docker) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Specializations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 125.0551 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Machine Learning, Deep Learning, Computer Vision, Data Analytics, Data Science) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.6 .6 .6 RG
+.5 w
+n 0 116.2 m 504.5669 116.2 l S
+n 0 0 m 504.5669 0 l S
+n 0 0 m 0 116.2 l S
+n 504.5669 0 m 504.5669 116.2 l S
+n 0 99.6 m 504.5669 99.6 l S
+n 0 83 m 504.5669 83 l S
+n 0 66.4 m 504.5669 66.4 l S
+n 0 49.8 m 504.5669 49.8 l S
+n 0 33.2 m 504.5669 33.2 l S
+n 0 16.6 m 504.5669 16.6 l S
+n 119.0551 0 m 119.0551 116.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 51.35433 192.0087 cm
+q
+.121569 .372549 .74902 RG
+n 94.2819 1.6125 m 156.6609 1.6125 l S
+n 163.9167 1.6125 m 236.9358 1.6125 l S
+n 244.1916 1.6125 m 295.4433 1.6125 l S
+BT 1 0 0 1 0 2.7 Tm 11.4 TL /F2 8.7 Tf 0 0 0 rg (Practice Repositories:) Tj /F1 8.7 Tf ( ) Tj .121569 .372549 .74902 rg (LeetCode \(C++\)) Tj 0 0 0 rg ( \267 ) Tj .121569 .372549 .74902 rg (LeetCode \(Python\)) Tj 0 0 0 rg ( \267 ) Tj .121569 .372549 .74902 rg (SQL Practice) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 177.6087 cm
+q
+.121569 .372549 .74902 RG
+n 114.0831 1.6125 m 151.8063 1.6125 l S
+n 159.0621 1.6125 m 206.4423 1.6125 l S
+BT 1 0 0 1 0 2.7 Tm 11.4 TL /F2 8.7 Tf 0 0 0 rg (Competitive Programming:) Tj /F1 8.7 Tf ( ) Tj .121569 .372549 .74902 rg (LeetCode) Tj 0 0 0 rg ( \267 ) Tj .121569 .372549 .74902 rg (CodeForces) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 157.1087 cm
+q
+.121569 .227451 .431373 rg
+BT 1 0 0 1 0 2.5 Tm /F2 12 Tf 14.5 TL (Education) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 155.3087 cm
+q
+.8 w
+1 J
+.121569 .227451 .431373 RG
+n 0 0 m 492.5669 0 l S
+Q
+Q
+q
+1 0 0 1 45.35433 75.80866 cm
+q
+.121569 .227451 .431373 rg
+n 0 77 504.5669 -16.6 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 63.4 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Qualification) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.378 63.4 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Institute) Tj T* ET
+Q
+Q
+q
+1 0 0 1 193.0866 63.4 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Board/ University) Tj T* ET
+Q
+Q
+q
+1 0 0 1 300.8031 63.4 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Passing Yr.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 368.8346 63.4 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Marks) Tj T* ET
+Q
+Q
+q
+1 0 0 1 442.5354 63.4 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.3 Tm /F2 8.3 Tf 10.6 TL (Remarks) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 41.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (B.Tech \(Civil Engg.\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.378 41.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (IIT Bhubaneswar) Tj T* ET
+Q
+Q
+q
+1 0 0 1 193.0866 36.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12.9 Tm /F1 8.3 Tf 10.6 TL (Board of Governors) Tj T* (\(BoG\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 300.8031 41.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (2028) Tj T* ET
+Q
+Q
+q
+1 0 0 1 368.8346 41.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (8.46 CGPA) Tj T* ET
+Q
+Q
+q
+1 0 0 1 442.5354 41.5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Pursuing) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Class XII) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.378 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (PBPS, Gaya) Tj T* ET
+Q
+Q
+q
+1 0 0 1 193.0866 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (CBSE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 300.8031 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (2024) Tj T* ET
+Q
+Q
+q
+1 0 0 1 368.8346 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (88.4%) Tj T* ET
+Q
+Q
+q
+1 0 0 1 442.5354 19.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Class X) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.378 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (DAV PS, Gaya) Tj T* ET
+Q
+Q
+q
+1 0 0 1 193.0866 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (CBSE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 300.8031 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (2022) Tj T* ET
+Q
+Q
+q
+1 0 0 1 368.8346 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (89.4%) Tj T* ET
+Q
+Q
+q
+1 0 0 1 442.5354 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.3 Tm /F1 8.3 Tf 10.6 TL (Passed) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.6 .6 .6 RG
+.5 w
+n 0 77 m 504.5669 77 l S
+n 0 0 m 504.5669 0 l S
+n 0 0 m 0 77 l S
+n 504.5669 0 m 504.5669 77 l S
+n 0 60.4 m 504.5669 60.4 l S
+n 0 33.2 m 504.5669 33.2 l S
+n 0 16.6 m 504.5669 16.6 l S
+n 96.37795 0 m 96.37795 77 l S
+n 187.0866 0 m 187.0866 77 l S
+n 294.8031 0 m 294.8031 77 l S
+n 362.8346 0 m 362.8346 77 l S
+n 436.5354 0 m 436.5354 77 l S
+Q
+Q
+Q
+ 
+
+endstream
+endobj
+23 0 obj
+<<
+/Border [ 0 0 0 ]
+/Subtype /Link
+/Type /Annot
+/F 4
+/A <<
+/S /URI
+/URI (https\072\057\057mayank\055jeet\056vercel\056app\057)
+>>
+/Rect [ 410.16118 767.7487 444.60558 781.7087 ]
+>>
+endobj
 xref
-0 22
+0 24
 0000000000 65535 f 
 0000000015 00000 n 
-0000000054 00000 n 
-0000000113 00000 n 
-0000000178 00000 n 
-0000000473 00000 n 
-0000005042 00000 n 
-0000005083 00000 n 
-0000005190 00000 n 
-0000005302 00000 n 
-0000005323 00000 n 
-0000005557 00000 n 
-0000005762 00000 n 
-0000005982 00000 n 
-0000006203 00000 n 
-0000006431 00000 n 
-0000006649 00000 n 
-0000006877 00000 n 
-0000007108 00000 n 
-0000007348 00000 n 
-0000007574 00000 n 
-0000007795 00000 n 
+0000000081 00000 n 
+0000000140 00000 n 
+0000000441 00000 n 
+0000005010 00000 n 
+0000005051 00000 n 
+0000005158 00000 n 
+0000005270 00000 n 
+0000005505 00000 n 
+0000005712 00000 n 
+0000005932 00000 n 
+0000006153 00000 n 
+0000006381 00000 n 
+0000006599 00000 n 
+0000006827 00000 n 
+0000007058 00000 n 
+0000007298 00000 n 
+0000007524 00000 n 
+0000007745 00000 n 
+0000007966 00000 n 
+0000007988 00000 n 
+0000008028 00000 n 
+0000021871 00000 n 
 trailer
 <<
-/Size 22
-/Root 3 0 R
-/Info 1 0 R
+/Size 24
+/Root 1 0 R
+/Info 21 0 R
 >>
 startxref
-8016
+22069
 %%EOF
