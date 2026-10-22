@@ -237,6 +237,35 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
 .contact p { margin: 0 0 18px; position: relative; z-index: 1; }
 .contact .btn-row { position: relative; z-index: 1; }
 
+/* ===== Projects ===== */
+.projects { display: grid; gap: 34px; }
+.project {
+  display: grid; grid-template-columns: 5fr 6fr; gap: 32px; padding: 26px; align-items: center;
+  transform-style: preserve-3d; transition: transform .35s ease, box-shadow .35s ease;
+}
+.project:hover { transform: perspective(1200px) rotateX(1.5deg) rotateY(-2deg) translateY(-6px); }
+.project > * { position: relative; z-index: 1; }
+.project h3 { font-size: 1.5rem; font-weight: 700; margin: 0 0 2px; }
+.tagline { margin: 0 0 14px; color: var(--accent); font-family: var(--mono); font-size: .8rem; letter-spacing: .04em; }
+.points { margin: 0 0 16px; padding-left: 18px; color: var(--muted); font-size: .93rem; }
+.points li { margin-bottom: 8px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.tags span {
+  padding: 4px 12px; border-radius: 999px; font-size: .75rem; font-weight: 600; color: var(--text);
+  background: var(--metal); border: 1px solid var(--edge); box-shadow: var(--shadow-pressed);
+}
+/* screenshot well: recessed metal frame */
+.shot {
+  aspect-ratio: 16 / 10; border-radius: 12px; overflow: hidden;
+  background: var(--bg); box-shadow: var(--shadow-pressed); border: 1px solid var(--edge);
+}
+.shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.shot.no-shot img { display: none; }
+.shot.no-shot::after {
+  content: "Screenshot coming soon"; display: grid; place-items: center; height: 100%;
+  font-family: var(--mono); font-size: .78rem; color: var(--muted);
+}
+
 /* ===== Footer ===== */
 .footer { padding: 28px 0; border-top: 1px solid var(--edge); text-align: center; }
 
@@ -244,6 +273,8 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
   .section { padding: 72px 0; }
   .about { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 26px; }
   .photo-frame { width: 180px; height: 180px; }
+  .project { grid-template-columns: 1fr; padding: 20px; }
+  .project:hover { transform: none; }
   .rnav-item { width: 50px; height: 50px; margin: -25px 0 0 -25px; }
 }
 @media (prefers-reduced-motion: reduce) {

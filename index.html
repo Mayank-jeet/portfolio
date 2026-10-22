@@ -102,7 +102,64 @@
     <section id="projects" class="section alt">
       <div class="container">
         <h2 class="section-title chrome">Projects</h2>
-        <div class="plate"><p class="muted">Placeholder: BlogGEN, OpsPilot, Anomaly-Inspect cards come in Step 3.</p></div>
+        <!-- TODO: replace the demo/code URLs below and add screenshots in assets/projects/ -->
+        <div class="projects">
+
+          <article class="plate project">
+            <div class="shot"><img src="assets/projects/bloggen.png" alt="BlogGEN screenshot" loading="lazy" onerror="this.parentElement.classList.add('no-shot')"></div>
+            <div class="project-body">
+              <h3>BlogGEN</h3>
+              <p class="tagline">RAG-based blog generation app</p>
+              <ul class="points">
+                <li>A LangGraph pipeline splits a topic into tasks, researches each one on demand (Tavily) and writes the final post.</li>
+                <li>A token-budget monitor sets research depth per task by importance. The model also decides where images are needed and generates them (Gemini).</li>
+                <li>ChatGPT-style React UI with per-thread history in a LangGraph checkpointer. FastAPI on Render, frontend on Vercel.</li>
+              </ul>
+              <div class="tags"><span>LangGraph</span><span>FastAPI</span><span>React</span><span>Tavily</span><span>Gemini</span></div>
+              <div class="btn-row">
+                <a class="btn primary" href="https://YOUR-BLOGGEN-DEMO.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/YOUR-USERNAME/BlogGEN" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="plate project">
+            <div class="shot"><img src="assets/projects/opspilot.png" alt="OpsPilot screenshot" loading="lazy" onerror="this.parentElement.classList.add('no-shot')"></div>
+            <div class="project-body">
+              <h3>OpsPilot</h3>
+              <p class="tagline">Autonomous AI task worker with human approval</p>
+              <ul class="points">
+                <li>A LangGraph plan-act-observe loop: the LLM picks one structured action at a time from 8 tools, while deterministic guards enforce step order and rules.</li>
+                <li>Drives a simulated accounting app through a real headless browser (Playwright), verifies the ledger result and detects duplicates to avoid double-posting.</li>
+                <li>High-value invoices pause for approve/reject, enforced in both the executor and the API, so the model cannot approve its own transaction. Includes retry-based recovery and multi-currency parsing with live rates.</li>
+              </ul>
+              <div class="tags"><span>LangGraph</span><span>FastAPI</span><span>Playwright</span><span>React</span></div>
+              <div class="btn-row">
+                <a class="btn primary" href="https://YOUR-OPSPILOT-DEMO.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/YOUR-USERNAME/OpsPilot" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="plate project">
+            <div class="shot"><img src="assets/projects/anomaly-inspect.png" alt="Anomaly-Inspect screenshot" loading="lazy" onerror="this.parentElement.classList.add('no-shot')"></div>
+            <div class="project-body">
+              <h3>Anomaly-Inspect</h3>
+              <p class="tagline">Unsupervised defect detection on MVTec AD</p>
+              <ul class="points">
+                <li>Compared a convolutional-autoencoder baseline against a PatchCore-style method (frozen ResNet-18 features + FAISS memory banks) across 15 categories.</li>
+                <li>The PatchCore-style method reached 0.977 mean image AUROC and 0.973 pixel AUROC, versus 0.669 and 0.505 for the autoencoder.</li>
+                <li>Exported to ONNX and deployed as a FastAPI + React demo with ~97ms median end-to-end latency on CPU.</li>
+              </ul>
+              <div class="tags"><span>PyTorch</span><span>FAISS</span><span>ONNX Runtime</span><span>FastAPI</span><span>React</span></div>
+              <div class="btn-row">
+                <a class="btn primary" href="https://YOUR-ANOMALY-DEMO.example" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/YOUR-USERNAME/Anomaly-Inspect" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
