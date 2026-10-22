@@ -98,3 +98,48 @@
   setCurrent(0);
   setTimeout(() => { ready = true; }, 800);
 })();
+
+/* ===== Scroll progress bar ===== */
+(() => {
+  const bar = document.createElement("div");
+  bar.className = "progress";
+  document.body.prepend(bar);
+  let ticking = false;
+  const update = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? Math.min(scrollY / max, 1) : 0})`;
+    ticking = false;
+  };
+  addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+})();
+
+/* ===== Reveal on scroll (content stays visible if JS or IntersectionObserver is missing) ===== */
+(() => {
+  if (!("IntersectionObserver" in window)) return;
+  const targets = document.querySelectorAll(".section-title, .plate, .pitch, .hero-sub, .hero .btn-row");
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+  targets.forEach(el => {
+    // small stagger for siblings that appear together (e.g. skill cards, stat plates)
+    const idx = [...el.parentElement.children].indexOf(el);
+    el.style.setProperty("--d", `${Math.min(idx, 5) * 70}ms`);
+    el.classList.add("reveal");
+    io.observe(el);
+  });
+})();
+
+/* ===== Metallic sheen that follows the cursor on plates (mouse devices only) ===== */
+(() => {
+  if (!matchMedia("(hover: hover)").matches) return;
+  document.querySelectorAll(".plate").forEach(p => {
+    p.addEventListener("pointermove", e => {
+      const r = p.getBoundingClientRect();
+      p.style.setProperty("--mx", `${e.clientX - r.left}px`);
+      p.style.setProperty("--my", `${e.clientY - r.top}px`);
+    });
+  });
+})();
