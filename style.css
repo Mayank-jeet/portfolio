@@ -240,9 +240,13 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
 /* ===== Projects ===== */
 .projects { display: grid; gap: 34px; }
 .project {
-  display: grid; grid-template-columns: 5fr 6fr; gap: 32px; padding: 26px; align-items: center;
+  display: flex; flex-direction: column; gap: 24px; padding: 22px;
   transform-style: preserve-3d; transition: transform .35s ease, box-shadow .35s ease;
 }
+/* body: title/tags/buttons on the left, bullets on the right */
+.project-body { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); column-gap: 40px; align-content: start; }
+.project-body > h3, .project-body > .tagline, .project-body > .tags, .project-body > .btn-row { grid-column: 1; }
+.project-body > .points { grid-column: 2; grid-row: 1 / span 4; margin: 0; }
 .project:hover { transform: perspective(1200px) rotateX(1.5deg) rotateY(-2deg) translateY(-6px); }
 .project > * { position: relative; z-index: 1; }
 .project h3 { font-size: 1.5rem; font-weight: 700; margin: 0 0 2px; }
@@ -256,10 +260,20 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
 }
 /* screenshot well: recessed metal frame */
 .shot {
-  aspect-ratio: 16 / 10; border-radius: 12px; overflow: hidden;
+  --bar: 26px; position: relative; aspect-ratio: 2.1 / 1; border-radius: 12px; overflow: hidden;
   background: var(--bg); box-shadow: var(--shadow-pressed); border: 1px solid var(--edge);
 }
-.shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+/* mini browser bar */
+.shot::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: var(--bar); z-index: 2;
+  background:
+    radial-gradient(circle at 14px 50%, #ff5f57 0 4px, transparent 5px),
+    radial-gradient(circle at 30px 50%, #febc2e 0 4px, transparent 5px),
+    radial-gradient(circle at 46px 50%, #28c840 0 4px, transparent 5px),
+    var(--metal);
+  border-bottom: 1px solid var(--edge);
+}
+.shot img { position: absolute; left: 0; top: var(--bar); width: 100%; height: calc(100% - var(--bar)); object-fit: cover; object-position: top left; }
 .shot.no-shot img { display: none; }
 .shot.no-shot::after {
   content: "Screenshot coming soon"; display: grid; place-items: center; height: 100%;
@@ -273,9 +287,31 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
   .section { padding: 72px 0; }
   .about { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 26px; }
   .photo-frame { width: 180px; height: 180px; }
-  .project { grid-template-columns: 1fr; padding: 20px; }
-  .project:hover { transform: none; }
+  .project { padding: 16px; gap: 18px; }
+  .shot { --bar: 20px; aspect-ratio: 2 / 1; }
+  .footer { padding-bottom: 96px; } /* keep clear of the floating menu button */
+  .btn { padding: 11px 18px; }
   .rnav-item { width: 50px; height: 50px; margin: -25px 0 0 -25px; }
+}
+body { overflow-x: clip; }
+.btn { overflow-wrap: anywhere; }
+
+/* tablets and narrow windows: stack project text under the screenshot */
+@media (max-width: 900px) {
+  .project-body { grid-template-columns: 1fr; }
+  .project-body > h3, .project-body > .tagline, .project-body > .tags, .project-body > .btn-row, .project-body > .points { grid-column: 1; grid-row: auto; }
+  .project-body > .points { margin: 0 0 16px; }
+  .about { grid-template-columns: 180px 1fr; gap: 26px; }
+  .photo-frame { width: 180px; height: 180px; }
+}
+@media (max-width: 720px) {
+  .about { grid-template-columns: 1fr; }
+}
+
+/* touch devices: no hover tilt, no fixed background (iOS ignores it) */
+@media (hover: none) {
+  .project:hover, .btn:hover, .metal-btn:hover { transform: none; }
+  body { background-attachment: scroll; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
