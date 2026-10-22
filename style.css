@@ -146,7 +146,8 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
   opacity: 1;
   transform: rotate(var(--a)) translate(var(--r)) rotate(calc(var(--a) * -1)) scale(1);
 }
-.rnav.open .rnav-item { pointer-events: auto; }
+/* buttons are clickable whenever the circle is visible: opened by the toggle, or peeking on a new section */
+.rnav.open .rnav-item, .rnav.peek .rnav-item { pointer-events: auto; }
 .rnav-item:hover, .rnav-item:focus-visible { color: var(--text); outline: none; }
 .rnav-item.active {
   color: var(--accent);

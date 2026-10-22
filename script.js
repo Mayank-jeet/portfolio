@@ -56,17 +56,26 @@
     toggle.setAttribute("aria-label", "Open menu");
     label.textContent = names[current];
   }
-  // brief circular reveal when the user reaches a new section
+  // circular reveal when the user reaches a new section. While it is on screen the
+  // section buttons are clickable, exactly like the opened menu.
+  const PEEK_MS = 1600;
+  function startPeekTimer(ms) {
+    clearTimeout(peekTimer);
+    peekTimer = setTimeout(() => nav.classList.remove("peek"), ms);
+  }
   function peek() {
     if (nav.classList.contains("open") || quiet) return;
     nav.classList.add("peek");
-    clearTimeout(peekTimer);
-    peekTimer = setTimeout(() => nav.classList.remove("peek"), 1500);
+    startPeekTimer(PEEK_MS);
   }
+  // keep the circle on screen while the user is reaching for a button, hide it shortly after they let go
+  function holdPeek() { if (nav.classList.contains("peek")) clearTimeout(peekTimer); }
+  function releasePeek() { if (nav.classList.contains("peek")) startPeekTimer(900); }
   // no peeks while a click-to-scroll is passing through other sections
   function stayQuiet(ms) {
     quiet = true;
     clearTimeout(peekDelay);
+    clearTimeout(peekTimer);
     nav.classList.remove("peek");
     clearTimeout(quietTimer);
     quietTimer = setTimeout(() => { quiet = false; }, ms);
@@ -78,9 +87,13 @@
 
   items.forEach((a, i) => {
     a.addEventListener("click", () => { stayQuiet(1100); closeMenu(); });
-    a.addEventListener("mouseenter", () => { label.textContent = names[i]; });
-    a.addEventListener("focus", () => { label.textContent = names[i]; });
-    a.addEventListener("mouseleave", () => { label.textContent = names[current]; });
+    a.addEventListener("mouseenter", () => { label.textContent = names[i]; holdPeek(); });
+    a.addEventListener("focus", () => { label.textContent = names[i]; holdPeek(); });
+    a.addEventListener("mouseleave", () => { label.textContent = names[current]; releasePeek(); });
+    a.addEventListener("blur", releasePeek);
+    a.addEventListener("touchstart", holdPeek, { passive: true });
+    a.addEventListener("touchend", releasePeek, { passive: true });
+    a.addEventListener("touchcancel", releasePeek, { passive: true });
   });
 
   // scroll-spy: the section crossing the middle of the screen is "current"
