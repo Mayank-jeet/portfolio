@@ -255,9 +255,9 @@ h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); letter-spacing: -0.03em; font-weight
   transition: transform .35s ease, box-shadow .35s ease;
 }
 /* body: title/tags/buttons on the left, bullets on the right */
-.project-body { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); column-gap: 40px; align-content: start; }
+.project-body { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); grid-template-rows: repeat(4, min-content) 1fr; column-gap: 40px; align-content: start; align-items: start; }
 .project-body > h3, .project-body > .tagline, .project-body > .tags, .project-body > .btn-row { grid-column: 1; }
-.project-body > .points { grid-column: 2; grid-row: 1 / span 4; margin: 0; }
+.project-body > .points { grid-column: 2; grid-row: 1 / span 5; margin: 0; }
 .project:hover { transform: perspective(1200px) rotateX(1.5deg) rotateY(-2deg) translateY(-6px); }
 .project > * { position: relative; z-index: 1; }
 .project h3 { font-size: 1.5rem; font-weight: 700; margin: 0 0 2px; }
@@ -531,7 +531,7 @@ body { overflow-x: clip; }
 
 /* tablets and narrow windows: stack project text under the screenshot */
 @media (max-width: 900px) {
-  .project-body { grid-template-columns: 1fr; }
+  .project-body { grid-template-columns: 1fr; grid-template-rows: none; }
   .project-body > h3, .project-body > .tagline, .project-body > .tags, .project-body > .btn-row, .project-body > .points { grid-column: 1; grid-row: auto; }
   .project-body > .points { margin: 0 0 16px; }
   .about { grid-template-columns: 180px 1fr; gap: 26px; }
