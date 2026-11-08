@@ -98,7 +98,7 @@
 
         <div class="stats">
           <div class="plate stat"><strong>600+</strong><span>DSA problems solved (C++)</span></div>
-          <div class="plate stat"><strong>3</strong><span>deployed AI projects</span></div>
+          <div class="plate stat"><strong>4</strong><span>deployed ML and AI projects</span></div>
           <div class="plate stat"><strong>Full-stack</strong><span>ML model to API to UI to live deployment</span></div>
         </div>
       </div>
@@ -114,7 +114,7 @@
           </div>
           <div class="about-text">
             <p>I'm a B.Tech Civil Engineering student at IIT Bhubaneswar (batch of 2028) who spends most of his time building software: full-stack apps, applied machine learning and agentic AI systems.</p>
-            <p>I've solved 600+ DSA problems in C++ and built three deployed projects: <strong>OpsPilot</strong>, an autonomous task-executing agent with a human approval gate; <strong>BlogGEN</strong>, a RAG-based blog generator; and <strong>Anomaly-Inspect</strong>, a computer-vision defect detector.</p>
+            <p>I've solved 600+ DSA problems in C++ and built four deployed projects: <strong>OpsPilot</strong>, an autonomous task-executing agent with a human approval gate; <strong>BlogGEN</strong>, a RAG-based blog generator; <strong>Anomaly-Inspect</strong>, a computer-vision defect detector; and <strong>StructIQ</strong>, a concrete-strength predictor.</p>
             <p>I enjoy taking an idea all the way to a working demo. Outside code, I worked as Core Head of Sports Fest at IIT Bhubaneswar, where I led a team of organizers.</p>
           </div>
         </div>
@@ -178,6 +178,24 @@
               <div class="btn-row">
                 <a class="btn primary" href="https://anomaly-inspect.vercel.app" target="_blank" rel="noopener">Live Demo</a>
                 <a class="btn" href="https://github.com/Mayank-jeet/anomaly-inspect" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="plate project">
+            <div class="gallery" data-title="StructIQ" data-images="assets/projects/structiq.png"></div>
+            <div class="project-body">
+              <h3>StructIQ</h3>
+              <p class="tagline">Concrete compressive-strength prediction</p>
+              <ul class="points">
+                <li>Built a predictor on the UCI concrete dataset (1,005 mixes) with a leakage-safe split by recipe (428 recipes, grouped 5-fold CV) and a tuned LightGBM model.</li>
+                <li>Reached 6.53 MPa test RMSE and 0.87 R&sup2; on held-out recipes, versus 7.35 MPa and 0.83 for a feature-engineered linear baseline. SHAP and error analysis showed strong concrete (above 60 MPa) is under-predicted.</li>
+                <li>Added a SQLite analytics layer (CTEs, window functions) and a simulated A/B experiment (power analysis, CUPED, Monte Carlo). Shipped as a FastAPI + React dashboard on Render and Vercel.</li>
+              </ul>
+              <div class="tags"><span>LightGBM</span><span>SHAP</span><span>SQL</span><span>FastAPI</span><span>React</span></div>
+              <div class="btn-row">
+                <a class="btn primary" href="https://struct-iq-concrete.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn" href="https://github.com/Mayank-jeet/StructIQ" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>

@@ -560,3 +560,207 @@
     });
   });
 })();
+
+/* ===== Project galleries: 3D coverflow + fullscreen viewer =====
+   Usage: <div class="gallery" data-title="Name" data-images="path1.png|Caption 1; path2.png|Caption 2"></div>
+   Any number of images works (1, 4, 6...). Captions are optional. Missing files are skipped. */
+(() => {
+  const galleries = document.querySelectorAll(".gallery");
+  if (!galleries.length) return;
+
+  const ICON = {
+    close: '<path d="M6 6l12 12M18 6L6 18"/>',
+    prev: '<path d="M15 5l-7 7 7 7"/>',
+    next: '<path d="M9 5l7 7-7 7"/>'
+  };
+  const svg = p => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
+
+  /* ---- shared fullscreen viewer ---- */
+  const lb = document.createElement("div");
+  lb.className = "lightbox";
+  lb.hidden = true;
+  lb.setAttribute("role", "dialog");
+  lb.setAttribute("aria-modal", "true");
+  lb.setAttribute("aria-label", "Image viewer");
+  lb.innerHTML =
+    `<button class="lb-close metal-btn" type="button" aria-label="Close image">${svg(ICON.close)}</button>` +
+    `<button class="lb-nav lb-prev metal-btn" type="button" aria-label="Previous image">${svg(ICON.prev)}</button>` +
+    `<button class="lb-nav lb-next metal-btn" type="button" aria-label="Next image">${svg(ICON.next)}</button>` +
+    `<figure class="lb-figure"><img alt=""><figcaption></figcaption></figure>`;
+  document.body.appendChild(lb);
+  const lbImg = lb.querySelector("img");
+  const lbCap = lb.querySelector("figcaption");
+  const lbPrev = lb.querySelector(".lb-prev");
+  const lbNext = lb.querySelector(".lb-next");
+  const lbClose = lb.querySelector(".lb-close");
+  let lbGallery = null, hideTimer;
+
+  function showLb() {
+    const g = lbGallery, it = g.items[g.active], n = g.items.length;
+    lbImg.src = it.src;
+    lbImg.alt = it.img.alt;
+    lbCap.textContent = it.cap;
+    lb.classList.toggle("single", n <= 1);
+    lbPrev.disabled = g.active === 0;
+    lbNext.disabled = g.active === n - 1;
+  }
+  function openLb(g) {
+    lbGallery = g;
+    clearTimeout(hideTimer);
+    showLb();
+    lb.hidden = false;
+    document.documentElement.classList.add("lb-open");
+    requestAnimationFrame(() => lb.classList.add("open"));
+    lbClose.focus();
+  }
+  function closeLb() {
+    if (!lbGallery) return;
+    const g = lbGallery;
+    lbGallery = null;
+    lb.classList.remove("open");
+    document.documentElement.classList.remove("lb-open");
+    hideTimer = setTimeout(() => { lb.hidden = true; lbImg.removeAttribute("src"); }, 300);
+    const it = g.items[g.active];
+    if (it) it.btn.focus({ preventScroll: true });
+  }
+  function stepLb(d) {
+    if (!lbGallery) return;
+    go(lbGallery, lbGallery.active + d);
+    showLb();
+  }
+
+  lbClose.addEventListener("click", closeLb);
+  lbPrev.addEventListener("click", () => stepLb(-1));
+  lbNext.addEventListener("click", () => stepLb(1));
+  lb.addEventListener("click", e => {
+    if (e.target === lb || e.target.classList.contains("lb-figure")) closeLb();
+  });
+  document.addEventListener("keydown", e => {
+    if (!lbGallery) return;
+    if (e.key === "Escape") closeLb();
+    else if (e.key === "ArrowLeft") stepLb(-1);
+    else if (e.key === "ArrowRight") stepLb(1);
+    else if (e.key === "Tab") { // keep focus inside the viewer
+      const f = [lbClose, lbPrev, lbNext].filter(b => !b.disabled && getComputedStyle(b).display !== "none");
+      const i = f.indexOf(document.activeElement);
+      e.preventDefault();
+      f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+    }
+  });
+
+  /* ---- coverflow ---- */
+  function layout(g) {
+    const n = g.items.length;
+    g.root.classList.toggle("single", n <= 1);
+    g.items.forEach((it, i) => {
+      const o = i - g.active, a = Math.abs(o), s = Math.sign(o);
+      const x = s * (Math.min(a, 1) * 56 + Math.max(a - 1, 0) * 18);   // % of slide width
+      it.btn.style.transform =
+        `translate(-50%, -50%) translateX(${x}%) translateZ(${-Math.min(a, 2) * 110}px) rotateY(${-s * Math.min(a, 1) * 36}deg)`;
+      it.btn.style.opacity = [1, .85, .45][a] ?? 0;
+      it.btn.style.zIndex = 10 - Math.min(a, 9);
+      it.btn.style.pointerEvents = a > 2 ? "none" : "auto";
+      it.btn.tabIndex = a > 1 ? -1 : 0;
+      it.btn.setAttribute("aria-label", `Image ${i + 1} of ${n}${it.cap ? ": " + it.cap : ""}${a === 0 ? " (open full screen)" : ""}`);
+    });
+    g.prev.disabled = g.active <= 0;
+    g.next.disabled = g.active >= n - 1;
+    [...g.dots.children].forEach((d, i) => d.classList.toggle("on", i === g.active));
+  }
+  function go(g, i) {
+    g.active = Math.max(0, Math.min(i, g.items.length - 1));
+    layout(g);
+  }
+  function dots(g) {
+    g.dots.innerHTML = "";
+    if (g.items.length < 2) return;
+    g.items.forEach((_, i) => {
+      const d = document.createElement("button");
+      d.type = "button";
+      d.className = "g-dot";
+      d.setAttribute("aria-label", `Show image ${i + 1}`);
+      d.addEventListener("click", () => go(g, i));
+      g.dots.appendChild(d);
+    });
+  }
+  function drop(g, item) { // image failed to load: remove it from the carousel
+    const i = g.items.indexOf(item);
+    if (i < 0) return;
+    g.items.splice(i, 1);
+    item.btn.remove();
+    if (!g.items.length) g.root.classList.add("no-shot");
+    dots(g);
+    go(g, g.active > i ? g.active - 1 : g.active);
+  }
+
+  function build(root) {
+    const title = root.dataset.title || "Project";
+    const g = { root, items: [], active: 0 };
+    const stage = document.createElement("div");
+    stage.className = "g-stage";
+    const arrow = dir => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = `g-arrow g-${dir} metal-btn`;
+      b.setAttribute("aria-label", dir === "prev" ? "Previous image" : "Next image");
+      b.innerHTML = svg(ICON[dir]);
+      b.addEventListener("click", () => go(g, g.active + (dir === "prev" ? -1 : 1)));
+      return b;
+    };
+    g.prev = arrow("prev");
+    g.next = arrow("next");
+    g.dots = document.createElement("div");
+    g.dots.className = "g-dots";
+    root.append(stage, g.prev, g.next, g.dots);
+    root.setAttribute("role", "region");
+    root.setAttribute("aria-roledescription", "carousel");
+    root.setAttribute("aria-label", `${title} screenshots`);
+
+    (root.dataset.images || "").split(";").map(s => s.trim()).filter(Boolean).forEach(entry => {
+      const [src, ...rest] = entry.split("|");
+      const item = { src: src.trim(), cap: rest.join("|").trim() };
+      item.btn = document.createElement("button");
+      item.btn.type = "button";
+      item.btn.className = "g-slide";
+      item.img = new Image();
+      item.img.draggable = false;
+      item.img.alt = `${title} screenshot${item.cap ? ": " + item.cap : ""}`;
+      item.img.addEventListener("load", () => { // odd-shaped images are shown whole instead of cropped
+        const r = item.img.naturalWidth / item.img.naturalHeight;
+        item.img.style.objectFit = r > 1.7 && r < 2.6 ? "cover" : "contain";
+      });
+      item.img.addEventListener("error", () => drop(g, item));
+      item.btn.appendChild(item.img);
+      item.btn.addEventListener("click", () => {
+        const i = g.items.indexOf(item);
+        if (i === g.active) openLb(g); else go(g, i);
+      });
+      item.img.src = item.src;
+      stage.appendChild(item.btn);
+      g.items.push(item);
+    });
+
+    // swipe (touch and mouse drag); a drag never counts as a click
+    let sx = null, moved = false;
+    stage.addEventListener("pointerdown", e => { sx = e.clientX; moved = false; });
+    stage.addEventListener("pointermove", e => { if (sx !== null && Math.abs(e.clientX - sx) > 12) moved = true; });
+    stage.addEventListener("pointerup", e => {
+      if (sx === null) return;
+      const dx = e.clientX - sx;
+      sx = null;
+      if (Math.abs(dx) > 45) go(g, g.active + (dx < 0 ? 1 : -1));
+    });
+    stage.addEventListener("pointercancel", () => { sx = null; });
+    stage.addEventListener("click", e => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+
+    root.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft") { go(g, g.active - 1); e.preventDefault(); }
+      else if (e.key === "ArrowRight") { go(g, g.active + 1); e.preventDefault(); }
+    });
+
+    dots(g);
+    layout(g);
+  }
+
+  galleries.forEach(build);
+})();
